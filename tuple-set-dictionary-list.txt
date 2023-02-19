@@ -1,0 +1,31 @@
+tuple: nome da variavel = (valores)
+novo metodo no python 3.11: nome da variavel : tuple[int | str, ...] = (12,9,4,"rachacorigos")
+
+da para acessar cada valor no tuple assim: print("Valor da variavel: ", nome da variavel[posição do valor])
+ou
+criar uma variavel = nome da variavel[posição do valor] se pode usar numeros negativos tambem, ele comeca pelo primeiro valor
+print(nome da variavel nova)
+
+concatenar tuples: print(tuple1 + tuple2)
+ou 
+tuple3 = tuple1 + tuple2
+
+repetição de tuples: tuple3 = ('macaco', )*3
+
+tuple são imutaveis: tuple3 = (0,1,2,3)
+tuple3[0] = 4
+diz mensagem de erro
+
+dividir tuple: tuple = (0,1,4,2)
+print(tuple[1:]) output:(1,4,2)
+print(tuple[::-1]) output:(3,2,1,0) vira ao contrario
+print(tuple[2:4]) output:(2,3)
+
+use del nome da variavel para deletar o tuple
+
+converter list para o tuple: list = [0,4,2]
+print(tuple(list))
+print(tuple('python')) output: (0,4,2)
+                               ('p', 'y', 't', 'h', 'o', 'n')
+saber o tamanho do tuple: tuple = ('macaco', 'alado')
+print(len(tuple)) output: 2

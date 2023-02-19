@@ -1,0 +1,68 @@
+arrays não são os mesmos  de lists e Numpy arrays.
+arrays ajudam a diminuir o tamanho do seu codigo.
+
+var_name->a
+
+valor: 1,   2,   3,   4,   5
+index: a[0],a[1],a[2],a[3],a[4]
+
+a = arr.array('d',[1.2,1.3,2,3])
+
+arrays são mutaveis
+arrays so podem ter um data type
+
+arrays não estão no python, por isso voce deve usar um modulo
+import arrays as arr ou from array import * para importar todas as funções desse modulo
+
+ 1 opçao = import arrays as arr
+nome da variavel = arr.array(data type, value list)
+
+quando todo o modulo é importado (from array import *) é assim que cria um array:
+nome da variavel = array(data type, value list)
+
+data types no array: 
+
+type code | python data type | byte size 
+    i     |        int       |     2
+    I     |        int       |     2
+    u     | unicode character|     2
+    h     |        int       |     2
+    H     |        int       |     2
+    l     |        int       |     4
+    L     |        int       |     4
+    f     |       float      |     4
+    d     |       float      |     8
+
+para acessar elementos dentro do array, o primeiro elemento começa com 0.
+
+para encontrar o tamanho de um array usamos a função len(nome do array)
+
+para adicionar ou alterar valores usamos os seguintes: 
+append(valor para colocar no array) serve para adicionar apenas um elemento
+extend(valores para colocar no array) serve para adicionar varios elementos
+insert(lugar do array ou index, valor) serve para colocar um valor em uma posição especifica no array
+
+primeiro = array('i', 1,2,4)
+primeiro.insert(1, 12) o numero 12 tomara o lugar do 2 no array e ele passara a ser o 2 no index.
+
+concatenação de arrays:
+
+array3 = array1 + array2
+
+remover elementos: 
+nome do array.pop(posição do array(index), se não especificado, retorna o ultimo valor do array) ele retorna esse valor depois
+nome do array.pop(valor no array(value list)) não retorna o valor, ele apenas é removido do array
+
+dividindo um array: usando o : 
+array = array('i', 4,2,6,1)
+print(array[0:3]) irá mostrar apenas o 4,2,6, o codigo diz: começa do zero e para antes do três 
+
+loop arrays:
+for x in nome da variavel[(opcional)pode colocar as posições para loopar]
+   instruções
+
+para inverter um array use:
+nome do array.remove()
+
+para saber o tamanho do item em bytes: 
+nome do array.itemsize mostrará apenas o tamanho toral e não ja utilizado
