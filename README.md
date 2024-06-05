@@ -1,1 +1,2 @@
-Esse repositorio foi feito para ajudar outros devs que estão aprendendo python.
+# Estudos-de-python
+Estudo sobre a linguagem Python 
